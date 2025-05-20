@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess The Number</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main>
+      <section class="board">
+        <h1>Guess The Number</h1>
+        <p>
+          A random number between <b>1 and 100</b> is selected. Message will be
+          displayed if your guess is too high or too low. See how many guesses
+          it will take you to guess the number. Good luck!
+        </p>
+        <label for="guessField">Enter guess:</label>
+        <input type="number" class="guessField" id="guessField" />
+        <input type="submit" value="Submit" class="guessSubmit" />
+        <div class="container">
+          <p class="prevGuesses"></p>
+          <p class="lastResult"></p>
+          <button class="reset">Start new game</button>
+        </div>
+      </section>
+    </main>
+    <script src="./main.js"></script>
+  </body>
+</html>
